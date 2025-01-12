@@ -22,6 +22,7 @@ function Cards() {
     ].sort(() => Math.random() - 0.5))
 
     const [prev, setPrev] = useState(-1);
+    const [disableClick, setDisableClick] = useState(false);
 
     function checkEqual(current){
         if (items[current].id == items[prev].id){
@@ -33,17 +34,19 @@ function Cards() {
             items[current].stat = "wrong"
             items[prev].stat = "wrong"
             setItems([...items])
+            setDisableClick(true);
             setTimeout(() => {
                 items[current].stat = ""
                 items[prev].stat = ""
                 setItems([...items])
-                setPrev(-1)
+                setPrev(-1);
+                setDisableClick(false);
             }, 1000)
         }
     }
 
     function handleClick(id) {
-        if (items[id].stat === "active" || items[id].stat === "correct") {
+        if (disableClick || items[id].stat === "active" || items[id].stat === "correct") {
             return;
         }
 
