@@ -1,24 +1,32 @@
 import React, { useState } from "react";
 import Card from "./Card";
+import cat1 from '../assets/cat-1.png';
+import cat2 from '../assets/cat-2.png';
+import cat3 from '../assets/cat-3.png';
+import cat4 from '../assets/cat-4.png';
+import cat5 from '../assets/cat-5.png';
+import cat6 from '../assets/cat-6.png';
+import cat7 from '../assets/cat-7.png';
+import cat8 from '../assets/cat-8.png';
 
 const generateShuffledCards = () => {
   const cards = [
-    { id: 1, img: "/assets/cat-1.png", stat: "" },
-    { id: 1, img: "/assets/cat-1.png", stat: "" },
-    { id: 2, img: "/assets/cat-2.png", stat: "" },
-    { id: 2, img: "/assets/cat-2.png", stat: "" },
-    { id: 3, img: "/assets/cat-3.png", stat: "" },
-    { id: 3, img: "/assets/cat-3.png", stat: "" },
-    { id: 4, img: "/assets/cat-4.png", stat: "" },
-    { id: 4, img: "/assets/cat-4.png", stat: "" },
-    { id: 5, img: "/assets/cat-5.png", stat: "" },
-    { id: 5, img: "/assets/cat-5.png", stat: "" },
-    { id: 6, img: "/assets/cat-6.png", stat: "" },
-    { id: 6, img: "/assets/cat-6.png", stat: "" },
-    { id: 7, img: "/assets/cat-7.png", stat: "" },
-    { id: 7, img: "/assets/cat-7.png", stat: "" },
-    { id: 8, img: "/assets/cat-8.png", stat: "" },
-    { id: 8, img: "/assets/cat-8.png", stat: "" },
+    { id: 1, img: cat1, stat: "" },
+    { id: 1, img: cat1, stat: "" },
+    { id: 2, img: cat2, stat: "" },
+    { id: 2, img: cat2, stat: "" },
+    { id: 3, img: cat3, stat: "" },
+    { id: 3, img: cat3, stat: "" },
+    { id: 4, img: cat4, stat: "" },
+    { id: 4, img: cat4, stat: "" },
+    { id: 5, img: cat5, stat: "" },
+    { id: 5, img: cat5, stat: "" },
+    { id: 6, img: cat6, stat: "" },
+    { id: 6, img: cat6, stat: "" },
+    { id: 7, img: cat7, stat: "" },
+    { id: 7, img: cat7, stat: "" },
+    { id: 8, img: cat8, stat: "" },
+    { id: 8, img: cat8, stat: "" },
   ];
 
   return cards.sort(() => Math.random() - 0.5);

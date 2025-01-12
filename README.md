@@ -16,5 +16,5 @@ A simple and interactive memory card game built with React. The game challenges 
 
 ## Screenshots
 
-![Game Screenshot](/public/assets/screenshot.png)
+![Game Screenshot](/src/assets/screenshot.png)
 
