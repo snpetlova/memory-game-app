@@ -69,6 +69,7 @@ h1 {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(4, 1fr);
   gap: 15px;
+  margin-bottom: 15px;
 }
 
 .card {
@@ -170,5 +171,68 @@ h1 {
   }
   100% {
     transform: scale(0);
+  }
+}
+
+@media screen and (max-width: 970px) {
+  .start-over-button {
+    padding: 5px 10px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  h1 {
+    font-size: 20px;
+  }
+
+  .description {
+    max-width: 500px;
+    font-size: 14px;
+  }
+
+  .container {
+    height: 500px;
+    width: 500px;
+    gap: 10px;
+  }
+
+  .moves-counter {
+    font-size: 15px;
+    padding: 5px 10px;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .description {
+    max-width: 450px;
+    font-size: 12px;
+  }
+
+  .container {
+    height: 480px;
+    width: 450px;
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .description {
+    max-width: 350px;
+  }
+
+  .container {
+    height: 100%;
+    width: 350px;
+    gap: 10px;
+    grid-template-rows: repeat(6, 1fr);
+  }
+
+  .start-over-button {
+    font-size: 10px;
+  }
+  
+  .modal-content {
+    max-width: 300px;
   }
 }

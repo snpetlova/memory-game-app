@@ -100,7 +100,7 @@ function Cards() {
       </div>
 
       <button className="start-over-button" onClick={playAgain}>
-        Start Over
+      ↻ Restart
       </button>
 
       <div className={`container ${gameOver ? "blurred" : ""}`}>
