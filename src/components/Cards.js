@@ -43,6 +43,10 @@ function Cards() {
     }
 
     function handleClick(id) {
+        if (items[id].stat === "active" || items[id].stat === "correct") {
+            return;
+        }
+
         if(prev === -1){
             items[id].stat = "active"
             setItems([...items])
